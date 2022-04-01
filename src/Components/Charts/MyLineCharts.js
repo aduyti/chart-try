@@ -2,7 +2,7 @@ import React from 'react';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
 
 
-const Charts = () => {
+const MyLineCharts = () => {
     const data = [
         {
             name: 'Page A',
@@ -51,7 +51,7 @@ const Charts = () => {
         <LineChart width={600} height={300} data={data} >
             <Line type="monotone" dataKey="uv" stroke="#8884d8" />
             <Line type="monotone" dataKey="pv" stroke="green" />
-            <Line type="monotone" dataKey="amt" stroke="blue" />
+            <Line dataKey="amt" stroke="blue" />
             <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
             <XAxis dataKey="name" />
             <YAxis />
@@ -60,4 +60,4 @@ const Charts = () => {
     );
 };
 
-export default Charts;
+export default MyLineCharts;

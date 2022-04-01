@@ -1,13 +1,13 @@
 import './App.css';
-import Charts from './Components/Charts/Charts';
-// import { useState } from 'react';
+import MyLineCharts from './Components/Charts/MyLineCharts'
+import DataAxios from './Components/DataAxios/DataAxios';
 
 function App() {
-  // const [chart, setChart]=useState();
   return (
     <div className="App">
       <h1>React Rechart Axios</h1>
-      <Charts></Charts>
+      <MyLineCharts></MyLineCharts>
+      <DataAxios></DataAxios>
     </div>
   );
 }
