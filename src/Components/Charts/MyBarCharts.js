@@ -5,8 +5,8 @@ const MyBarCharts = ({ myData }) => {
     let data = [];
     myData.forEach(ph => {
         const newData = {
-            'name': ph.phone_name,
-            'value': parseInt(ph.slug.split('-')[1])
+            name: ph.phone_name,
+            value: parseInt(ph.slug.split('-')[1])
         };
         data.push(newData);
     })
